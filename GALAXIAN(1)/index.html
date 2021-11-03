@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="wrap">
+
+    <div class=" home">
+        <div class="head">
+
+            <div class="up">
+                <p style="color: #aa2815">1UP</p>
+                <p class="score_n">
+                    00
+                </p>
+            </div>
+
+            <div class="height">
+                <p style="color: #aa2815">HI-SCORE</p>
+                <p>00</p>
+            </div>
+
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.png" height="150" width="600"/>
+        </div>
+
+        <div class="select">
+            <input class="name" type="text" placeholder="INPUT YOUR NAME">
+
+            <div class="select-item">
+                <p>1 PLAYER</p>
+                <p>2 PLAYERS</p>
+            </div>
+        </div>
+        <button class="btn" onclick="update()">Start Game</button>
+
+
+    </div>
+
+    <div class="board game">
+        <div class="g sidebar">
+        <div class="time">
+            <p style="font-size:40px;">TIME</p>
+            <p class="time_n" style="font-size:35px;color: #ffa500">00</p>
+        </div>
+
+        <div class="score">
+            <p>SCORE</p>
+            <p class="score_n" style="font-size:35px;color: #ffa500">00</p>
+        </div>
+
+        <div class="life">
+            <p>LIFE</p>
+            <img class="life-img" src="images/life.png" height="29" width="24"/>
+            <img class="life-img" src="images/life.png" height="29" width="24"/>
+            <img class="life-img" src="images/life.png" height="29" width="24"/>
+        </div>
+
+        <div class="play">
+            <p>PLAYER</p>
+            <p class="play-item" style="font-size:35px;color: #ffa500"></p>
+        </div>
+        </div>
+
+    <div class="g game_b">
+
+        <div class="plane"></div>
+
+    </div>
+
+    </div>
+
+    <div class="board rank">
+        <div class="head">
+
+            <div class="up">
+                <p style="color: #aa2815">1UP</p>
+                <p style="color: #ffa500" class="score_n">
+                    00
+                </p>
+            </div>
+
+            <div class="height">
+                <p style="color: #aa2815">HI-SCORE</p>
+                <p>00</p>
+            </div>
+
+        </div>
+
+        <div class="text">
+            <div class="text1">
+            <p style="color: #aa2815">MISSION: DESTROY ALIENS</p>
+            <P style="color: #c06bfd">WE ARE THE GALAXIANS</P>
+            </div>
+
+            <div class="text2">
+            <P style="color:#138a07;">- SCORE ADVANCE TABLE -</P>
+            <P style="color:#138a07;">CONVOY  CHARGER</P>
+                <p style="font-size: 40px;color: #0073ef" class="lose">YOUR LOSE</p>
+            </div>
+        </div>
+
+
+        <div class="rank-list">
+
+            <div class="rank-text">
+                <p>Name</p>
+                <p>Time</p>
+                <p>Score</p>
+
+
+            </div>
+            <button class="restart">RESTART</button>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
+<script src="main.js"></script>

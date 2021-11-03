@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    text-transform: uppercase;
+    font-family: "Courier", sans-serif;
+    box-sizing: border-box;
+    color:white;
+    font-weight:bold;
+    font-size:32px;
+}
+
+html, body, .layer{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    display:block;
+    top:0;
+    text-align: center;
+}
+
+body{
+    min-width:1490px;
+}
+
+.back-layer{
+    object-fit: cover;
+}
+
+body>.layer:not(.current){
+    display:none;
+}
+
+.wrapper{
+    height:1014px;
+    width:1050px;
+    margin:auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.start-layer .wrapper {
+    padding-top: 260px;
+}
+
+form{
+    margin-top:100px;
+    text-align: center;
+}
+
+input, button{
+    height:54px;
+    border:none;
+    color:white;
+    font-size:28px;
+    line-height:53px;
+    display:block;
+    margin: auto;
+    width:300px;
+    outline: none;
+}
+
+input{
+    border-bottom:1px solid #0073ef;
+    background-color: transparent;
+    text-align: center;
+}
+
+button{
+    background-color: #0073ef;
+    margin-top:54px;
+    cursor: pointer;
+}
+
+.formation{
+    width:677px;
+    height:386px;
+    position: absolute;
+    top:120px;
+}
+
+.bee-ctn{
+    width:100px;
+    height:100px;
+    position:absolute;
+    margin:auto;
+}
+
+.bee-img{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.player{
+    position:absolute;
+    width:100px;
+    height:100px;
+    bottom:80px;
+    line-height:100px;
+    text-align: center;
+}
+
+.player img{
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    display:block;
+    position:absolute;
+}
+
+.bullet{
+    width:3px;
+    height:12px;
+    position:absolute;
+    background-color: orange;
+}
+
+.ui-layer{
+    height:100%;
+    width:220px;
+}
+
+.info-container{
+    height:100%;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.72);
+    flex-direction: column;
+    padding-top:60px 0;
+    justify-content: space-around;
+}
+
+.info-box{
+    flex:0 0 100px;
+}
+
+.info-box>span{
+    height:50px;
+    display:block;
+    color:white;
+    line-height:50px;
+}
+
+.info-box>span:last-child{
+    color:orange;
+}
+
+.life{
+    margin-right:12px;
+}
+
+.end-layer{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.rank-list{
+    min-height:640px;
+}
+
+.rank-list table{
+    margin: 100px auto;
+    width:700px;
+}
+
+th{
+    color:orange;
+}
+
+tr{
+    line-height:54px;
+}
+
+td{
+    color:inherit;
+}
+
+

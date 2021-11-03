@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./images/background-1.jpg") center / cover;
+}
+
+.head p {
+    font-size: 50px;
+}
+
+.head {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
+    animation: home 1.5s forwards linear;
+}
+.rank{
+    animation: home 1.5s forwards linear;
+}
+.enemy {
+    animation: enemy 1s forwards linear;
+}
+
+@keyframes home {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes enemy {
+    0% {
+        transform: translateY(-300px);
+    }
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+.btn {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.select-item p {
+    font-size: 45px;
+    width: 250px;
+    margin: auto;
+    text-align: left;
+    color: #a858d2;
+}
+
+.board {
+    display: none;
+}
+
+.select {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.g {
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar {
+    width: 250px;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.game_b {
+    position: absolute;
+    top: 0;
+    width: 1366px;
+    transform: translateX(400px);
+    overflow: hidden;
+}
+
+.plane {
+    position: absolute;
+    width: 45px;
+    height: 48px;
+    left: 50%;
+    transform: translateX(-22px);
+    animation: plane 1s forwards linear;
+    background: url("./images/plane.png") center / cover;
+}
+
+.small-bee {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background: url("./images/bee_small.png") center / cover;
+}
+
+.red-bee {
+    width: 39px;
+    height: 30px;
+    position: absolute;
+    background: url("./images/bee_red.png") center / cover;
+}
+
+.blue-bee {
+    width: 45px;
+    height: 48px;
+    position: absolute;
+    background: url("./images/bee_blue.png") center / cover;
+}
+
+.green-bee {
+    width: 45px;
+    height: 48px;
+    position: absolute;
+    background: url("./images/bee_green.png") center / cover;
+}
+
+.bullet {
+    width: 5px;
+    height: 10px;
+    background: white;
+    position: absolute;
+}
+
+.text p {
+    font-size: 40px;
+}
+
+.text1 {
+    padding-top: 50px;
+}
+
+.text2 {
+    padding-top: 50px;
+}
+
+.flex-js {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    width: 130px;
+}
+
+.rank-text {
+    width: 100%;
+    text-align: left;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.rank-text p {
+    font-size: 40px;
+    color: #aa2815;
+}
+.rank-list{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+@keyframes plane {
+    0% {
+        bottom: -100px;
+    }
+    100% {
+        bottom: 20px;
+    }
+}
